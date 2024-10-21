@@ -1,7 +1,55 @@
-/* -------------------- IMPORTED FONTS -------------------------------------- */
-/*-------------------- CSS REST ---------------------------------------------------*/
+/* -------------------- IMPORTED FONTS 
+-------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap');
+
+/*-------------------- CSS REST 
+---------------------------------------------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 /* -------------------- ROOT VARIABLES --------------------------------------- */
+:root {
+  --green: #06A816;
+  --orange: #E75D02;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+
 /* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+
+body {
+  font-family: "Habibi", serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Irish Grover", system-ui;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
+@media screen and (min-width: 834px) {}
+
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
+@media screen and (min-width: 1280px) {}
+
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
+@media screen and (min-width: 1440px) {}
