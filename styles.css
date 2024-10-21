@@ -35,6 +35,7 @@ h3 {
 
 h1 {
   font-size: 2.5em;
+  text-shadow: 2px 2px 2px var(--black);
 }
 
 h2 {
@@ -43,6 +44,22 @@ h2 {
 
 h3 {
   font-size: 1.25em;
+}
+
+header {
+  background-color: green;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+header p {
+  font-style: italic;
 }
 
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
