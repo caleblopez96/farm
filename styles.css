@@ -27,6 +27,11 @@ body {
   font-family: "Habibi", serif;
 }
 
+nav,
+main {
+  padding: 0 1rem;
+}
+
 h1,
 h2,
 h3 {
@@ -60,6 +65,37 @@ header {
 
 header p {
   font-style: italic;
+}
+
+nav h2 {
+  display: none;
+}
+
+nav ul {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
+  padding: 1rem;
+}
+
+nav li {
+  margin: 1rem 0;
+  padding: .5rem;
+  width: 100%;
+  text-align: center;
+  background-color: var(--orange);
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+  color: var(--white);
+}
+
+#fruits h3 {
+  text-align: center;
 }
 
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
