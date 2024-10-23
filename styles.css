@@ -94,8 +94,32 @@ nav a {
   color: var(--white);
 }
 
-#fruits h3 {
+#fruits h3,
+#vegetables h3 {
   text-align: center;
+  margin: 1rem 0;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  place-items: center;
+  gap: 2rem;
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+figcaption {
+  position: absolute;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem 2.5rem;
 }
 
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
