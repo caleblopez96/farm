@@ -105,7 +105,8 @@ nav a {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   place-items: center;
-  gap: 2rem;
+  gap: 3rem;
+  margin-bottom: 5em;
 }
 
 figure {
@@ -120,6 +121,21 @@ figcaption {
   color: white;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 1rem 2.5rem;
+}
+
+footer {
+  background-color: var(--green);
+  color: var(--white);
+  text-align: center;
+}
+
+small {
+  background-color: var(--white);
+  color: var(--green);
+  display: block;
+  width: 100vw;
+  padding: 1rem 0;
+  font-weight: bold
 }
 
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
