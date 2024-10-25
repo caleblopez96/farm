@@ -60,7 +60,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  padding: 1rem;
+  padding: 2rem 1rem;
 }
 
 header p {
@@ -73,7 +73,7 @@ nav h2 {
 
 nav ul {
   display: grid;
-  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   place-items: center;
   padding: 1rem;
@@ -81,11 +81,11 @@ nav ul {
 
 nav li {
   margin: 1rem 0;
-  padding: .5rem;
   width: 100%;
   text-align: center;
   background-color: var(--orange);
   list-style-type: none;
+  padding: 0.75rem;
 }
 
 nav a {
@@ -118,6 +118,11 @@ figure {
   gap: 1rem;
 }
 
+figure img {
+  width: 100%;
+  height: auto;
+}
+
 figcaption {
   position: absolute;
   color: white;
@@ -130,6 +135,7 @@ footer {
   background-color: var(--green);
   color: var(--white);
   text-align: center;
+  width: 100vw;
   padding: 1rem 0 0 0;
 }
 
@@ -139,6 +145,7 @@ footer section {
 
 footer ul {
   margin: 1rem 0;
+  list-style-type: none;
 }
 
 small {
@@ -151,7 +158,27 @@ small {
 }
 
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
-@media screen and (min-width: 834px) {}
+@media screen and (min-width: 834px) {
+
+  .productGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  nav li {
+    width: 75%;
+  }
+
+  footer {}
+
+}
 
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
 @media screen and (min-width: 1280px) {}
