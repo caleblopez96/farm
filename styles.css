@@ -52,7 +52,7 @@ h3 {
 }
 
 header {
-  background-color: green;
+  background-color: var(--green);
   color: white;
   display: flex;
   flex-direction: column;
@@ -94,6 +94,10 @@ nav a {
   color: var(--white);
 }
 
+p {
+  margin: 1rem 0;
+}
+
 #fruits h3,
 #vegetables h3 {
   text-align: center;
@@ -101,12 +105,10 @@ nav a {
 }
 
 .productGrid {
+  margin-bottom: 5em;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
   place-items: center;
   gap: 3rem;
-  margin-bottom: 5em;
 }
 
 figure {
@@ -124,9 +126,19 @@ figcaption {
 }
 
 footer {
+  line-height: 1.5rem;
   background-color: var(--green);
   color: var(--white);
   text-align: center;
+  padding: 1rem 0 0 0;
+}
+
+footer section {
+  margin: 1rem 0 1.25rem 0;
+}
+
+footer ul {
+  margin: 1rem 0;
 }
 
 small {
