@@ -20,7 +20,6 @@
   --white: #ffffff;
 }
 
-
 /* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
 
 body {
@@ -211,12 +210,21 @@ small {
 @media screen and (min-width: 1280px) {
 
   header {
-    position: relative;
     background-color: var(--green);
     color: white;
     display: block;
+    position: relative;
   }
 
+  nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  nav ul {
+    width: 500px;
+  }
 
   .productGrid {
     display: grid;
@@ -226,4 +234,10 @@ small {
 }
 
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+  .productGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+}
