@@ -217,6 +217,7 @@ small {
   }
 
   nav {
+    display: flex;
     position: absolute;
     top: 0;
     right: 0;
@@ -224,6 +225,7 @@ small {
 
   nav ul {
     width: 500px;
+    align-items: center;
   }
 
   .productGrid {
