@@ -160,6 +160,12 @@ small {
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
 @media screen and (min-width: 834px) {
 
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+
   .productGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -176,12 +182,48 @@ small {
     width: 75%;
   }
 
-  footer {}
+  footer {
+    display: grid;
+    grid-template-areas:
+      "contact hours"
+      "small small"
+    ;
+  }
 
+  footer section {
+    padding: 1rem;
+  }
+
+  #hours {
+    grid-area: hours;
+  }
+
+  #contact {
+    grid-area: contact;
+  }
+
+  small {
+    grid-area: small;
+  }
 }
 
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
-@media screen and (min-width: 1280px) {}
+@media screen and (min-width: 1280px) {
+
+  header {
+    position: relative;
+    background-color: var(--green);
+    color: white;
+    display: block;
+  }
+
+
+  .productGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
 
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
 @media screen and (min-width: 1440px) {}
