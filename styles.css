@@ -233,7 +233,35 @@ small {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
+
+  footer {
+    grid-template-areas:
+      "contact hours"
+      "small small"
+    ;
+  }
+
+  /*todo finish the footer for larger screens. put footer into grid then grid out the two sections */
+  /* #contact {
+    background-color: red;
+    grid-area: "contact";
+    display: grid;
+    grid-area:
+      ""
+    ;
+  } */
+
+  #hours {
+    background-color: blue;
+    grid-area: "hours";
+  }
+
+  small {
+    grid-area: "small";
+  }
+
 }
+
 
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
 @media screen and (min-width: 1440px) {
